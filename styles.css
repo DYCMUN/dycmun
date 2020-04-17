@@ -1,0 +1,157 @@
+
+ * {
+	box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    margin: 10px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    margin-left: auto;
+}
+.myButton {
+	background-color:#44c767;
+	border-radius:20px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton2 {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:20px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:15px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.dyc-mun{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+p {
+    color: hsl(229, 6%, 50%);
+}
+
+.logo-pic{
+  width: 200px;
+  height: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+
+}
+.box {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),
+    0 6px 6px  rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    width: 350px;
+    /*Width + Padding:
+     380 * 4 = Max-width = 1140*/
+
+}
+/*CSS Wizardry*/
+.box::after {
+    content: '';
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+
+}
+.box-red:after {
+    background-color: hsl(0, 78%, 62%)
+}
+.box-cyan:after {
+    background-color: hsl(180, 62%, 55%)
+}
+.box-orange:after {
+    background-color: hsl(34, 97%, 64%)
+}
+.box-blue:after {
+    background-color: hsl(212, 86%, 64%)
+}
+.box-push {
+    transform: translateY(50%);
+
+}
+
+.box h2 {
+    margin: 0px;
+
+}
+
+.box p {
+    font-size: 14px;
+    margin: 15px 0 30px;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 775px) {
+    .box-push {
+        transform: translateY(0);
+    }
+}
